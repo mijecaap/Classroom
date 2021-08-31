@@ -1,0 +1,23 @@
+{
+  "name": "patrones",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "antd": "^4.16.12",
+    "date-fns": "^2.23.0",
+    "firebase": "^8.10.0",
+    "firebase-admin": "^9.11.1",
+    "next": "11.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-player": "^2.9.0",
+    "uuidv4": "^6.2.12"
+  }
+}
