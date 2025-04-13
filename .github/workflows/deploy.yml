@@ -32,7 +32,7 @@ jobs:
 
       - name: Configure Next.js for GitHub Pages
         run: |
-          echo "module.exports = { basePath: '/repositorio', assetPrefix: '/repositorio' }" > next.config.js
+          echo "module.exports = { basePath: 'https://mijecaap.github.io/classroom-inclusive', assetPrefix: 'https://mijecaap.github.io/classroom-inclusive' }" > next.config.js
 
       - name: Build site
         run: npm run build
