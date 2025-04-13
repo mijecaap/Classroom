@@ -1,36 +1,88 @@
-Link: https://classroom-inclusive.web.app/
+# Classroom Inclusive
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Una plataforma educativa inclusiva desarrollada con Next.js y Firebase que permite la gestión de cursos especializados en lenguaje de señas, braille y código morse.
 
-## Getting Started
+## 🚀 Características
 
-First, run the development server:
+- **Autenticación de Usuarios**: Sistema de registro e inicio de sesión para profesores y estudiantes
+- **Roles de Usuario**: Diferenciación entre profesores y estudiantes con diferentes permisos y vistas
+- **Gestión de Cursos**: Creación, visualización y eliminación de cursos
+- **Tipos de Cursos**: Soporte para cursos de:
+  - Lenguaje de Señas
+  - Braille
+  - Código Morse
+- **Almacenamiento de Archivos**: Integración con Firebase Storage para gestionar imágenes de cursos
+- **Interfaz Moderna**: Diseño responsivo utilizando Ant Design
+
+## 🛠️ Tecnologías
+
+- **Frontend**: Next.js, React
+- **UI Framework**: Ant Design
+- **Backend**: Firebase
+  - Authentication
+  - Firestore
+  - Storage
+- **Estilos**: CSS Modules, Emotion
+
+## 📦 Instalación
+
+1. Clona el repositorio:
+
+```bash
+git clone <url-del-repositorio>
+```
+
+2. Instala las dependencias:
+
+```bash
+npm install
+```
+
+3. Configura las variables de entorno creando un archivo `.env.local`:
+
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=tu-api-key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=tu-auth-domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=tu-project-id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=tu-storage-bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=tu-sender-id
+NEXT_PUBLIC_FIREBASE_APP_ID=tu-app-id
+```
+
+4. Inicia el servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌟 Características Principales
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Para Profesores
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Crear y gestionar cursos
+- Subir materiales educativos
+- Seguimiento de estudiantes
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Para Estudiantes
 
-## Learn More
+- Acceso a cursos
+- Visualización de materiales
+- Interfaz adaptada a sus necesidades
 
-To learn more about Next.js, take a look at the following resources:
+## 🔒 Seguridad
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Autenticación segura con Firebase
+- Protección de rutas
+- Validación de roles de usuario
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🚀 Despliegue
 
-## Deploy on Vercel
+La aplicación está configurada para ser desplegada en GitHub Pages utilizando GitHub Actions. El flujo de trabajo está definido en `.github/workflows/deploy.yml`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Licencia
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
+
+## ✨ Contribuir
+
+Las contribuciones son bienvenidas. Por favor, abre un issue primero para discutir los cambios que te gustaría realizar.
