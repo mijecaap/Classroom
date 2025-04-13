@@ -348,7 +348,11 @@ const login = () => {
                   alignItems: "center",
                 }}
               >
-                <Avatar shape="square" size={128} src="/img/student.png" />
+                <Avatar
+                  shape="square"
+                  size={128}
+                  src="https://firebasestorage.googleapis.com/v0/b/classroom-inclusive.appspot.com/o/assets%2Fstudent.png?alt=media&token=c40e23c3-97e7-463e-acb6-23fa603024ea"
+                />
               </Col>
             </Row>
           </Col>
@@ -375,7 +379,11 @@ const login = () => {
                   alignItems: "center",
                 }}
               >
-                <Avatar shape="square" size={128} src="/img/teacher.png" />
+                <Avatar
+                  shape="square"
+                  size={128}
+                  src="https://firebasestorage.googleapis.com/v0/b/classroom-inclusive.appspot.com/o/assets%2Fteacher.png?alt=media&token=a6791e7e-3a68-4c78-8e4d-798422559535"
+                />
               </Col>
             </Row>
           </Col>
