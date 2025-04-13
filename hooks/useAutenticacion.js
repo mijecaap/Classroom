@@ -2,15 +2,12 @@ import React, { useEffect, useState } from "react";
 import firebase from "../firebase/firebase";
 
 function useAutenticacion() {
-  const [usuarioAutenticado, guardarUsuarioAutenticado] = useState(null);
+  const [usuarioAutenticado, guardarUsuarioAutenticado] = useState(undefined);
 
   useEffect(() => {
+    // Firebase necesita un momento para inicializarse, así que esperamos al evento
     const unsuscribe = firebase.auth.onAuthStateChanged((user) => {
-      if (user) {
-        guardarUsuarioAutenticado(user);
-      } else {
-        guardarUsuarioAutenticado(null);
-      }
+      guardarUsuarioAutenticado(user);
     });
     return () => unsuscribe();
   }, []);
